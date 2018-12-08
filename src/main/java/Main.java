@@ -10,6 +10,7 @@ public class Main {
     }
 
     public static void main(String args[]){
+        makeATest();
         String url="http://guolin.tech/api/china";
         OkHttpClient client=new OkHttpClient();
         Request request=new Request.Builder().url(url).build();
@@ -25,6 +26,10 @@ public class Main {
                 System.out.println(result);
             }
         });
+    }
+
+    public static void makeATest(){
+        System.out.println("This is a test system");
     }
 
 
